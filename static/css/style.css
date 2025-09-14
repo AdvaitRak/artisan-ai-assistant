@@ -1,0 +1,124 @@
+/* Custom CSS for Artisan AI Assistant */
+
+.main-header {
+    text-align: center;
+    color: #FF6B6B;
+    margin-bottom: 2rem;
+}
+
+.language-selector {
+    background: linear-gradient(135deg, #FF6B6B, #4ECDC4);
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 1rem;
+}
+
+.platform-card {
+    border: 2px solid #E8E8E8;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    transition: all 0.3s ease;
+}
+
+.platform-card:hover {
+    border-color: #FF6B6B;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.voice-interface {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+}
+
+.processing-options {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.status-indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.status-available {
+    background-color: #28a745;
+}
+
+.status-unavailable {
+    background-color: #dc3545;
+}
+
+.before-after-container {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.image-container {
+    flex: 1;
+    text-align: center;
+}
+
+.download-button {
+    background: linear-gradient(135deg, #FF6B6B, #4ECDC4);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+.download-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.footer {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    margin-top: 3rem;
+    padding: 2rem 0;
+    border-top: 1px solid #E8E8E8;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .before-after-container {
+        flex-direction: column;
+    }
+    
+    .voice-interface {
+        padding: 1rem;
+    }
+}
+
+/* Streamlit specific overrides */
+.stSelectbox > div > div {
+    background-color: white;
+}
+
+.stFileUploader > div {
+    border: 2px dashed #FF6B6B;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.stProgress > div > div {
+    background: linear-gradient(135deg, #FF6B6B, #4ECDC4);
+}
