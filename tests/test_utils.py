@@ -2,6 +2,8 @@
 Test language utilities
 """
 import pytest
+import sys
+sys.path.append('/home/runner/work/artisan-ai-assistant/artisan-ai-assistant')
 from src.utils.language_utils import (
     get_ui_text, 
     get_supported_languages, 

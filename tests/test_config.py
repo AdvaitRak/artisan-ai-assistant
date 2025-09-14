@@ -3,7 +3,9 @@ Test configuration settings
 """
 import pytest
 import os
-from src.config import Config, LANGUAGE_CONFIG, UI_TRANSLATIONS
+import sys
+sys.path.append('/home/runner/work/artisan-ai-assistant/artisan-ai-assistant')
+from src.config.settings import Config, LANGUAGE_CONFIG, UI_TRANSLATIONS
 
 def test_config_initialization():
     """Test configuration initialization"""
